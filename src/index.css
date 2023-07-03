@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  max-width: 108rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.login,
+.container-dash {
+  width: 21.1875rem;
+  margin: 5rem auto;
+}
+
+.login p:first-child {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #000;
+  font-size: 1.5625rem;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+.dashboard-header {
+  margin-top: 5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+form {
+  margin-top: 3rem;
+}
+
+input {
+  display: block;
+  margin-top: 0.3rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 0.3125rem;
+  border: 0.5px solid #c2c2c2;
+  background: #fff;
+  outline: none;
+}
+
+input::placeholder {
+  color: #324054;
+  font-size: 0.75rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+}
+
+label {
+  color: #000;
+  font-size: 0.9375rem;
+  font-family: Montserrat;
+}
+
+.login-email {
+  margin-bottom: 2rem;
+}
+
+form div {
+  margin-bottom: 0.7rem;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #552bcc;
+}
+
+form a {
+  text-align: right;
+  display: block;
+}
+
+form p {
+  color: #ff0000;
+  font-size: 0.7rem;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  text-align: right;
+  font-size: 0.75rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+}
+
+button {
+  border-radius: 0.625rem;
+  background: #7b2dca;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 5rem 0 1rem 0;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.sign-up a {
+  color: #552bcc;
+}
+
+.sign-up {
+  color: #000;
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: Montserrat;
+}
