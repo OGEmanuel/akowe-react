@@ -68,7 +68,7 @@ const Login = () => {
           </label>
           {incorrect && <p>*Incorrect Login details</p>}
           <Link href="/">Forgot password?</Link>
-          <button type="submit">{loading ? 'Logging in' : 'Login'}</button>
+          <button type="submit">{loading ? 'Logging in...' : 'Login'}</button>
         </form>
         <p className="sign-up">
           Don't have an account, <Link href="/">Signup</Link>
