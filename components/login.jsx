@@ -22,6 +22,8 @@ const Login = () => {
       passwordRef.current?.value !== userPassword
     ) {
       setIncorrect(true);
+      setLoading(false);
+
       return;
     }
 
