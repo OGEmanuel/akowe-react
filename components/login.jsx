@@ -9,13 +9,14 @@ const headers = {
 
 const Login = () => {
   const [incorrect, setIncorrect] = useState(false);
+  const [loading, setLoading] = useState(false);
   const emailRef = useRef();
   const passwordRef = useRef();
   const navigate = useNavigate();
 
   const submitHandler = async e => {
     e.preventDefault();
-
+    setLoading(true);
     if (
       emailRef.current?.value !== userEmail ||
       passwordRef.current?.value !== userPassword
@@ -39,6 +40,7 @@ const Login = () => {
       const result = await response.text();
       navigate('/dashboard');
     } catch (error) {
+      setLoading(false);
       console.log('error', error);
     }
   };
@@ -66,7 +68,7 @@ const Login = () => {
           </label>
           {incorrect && <p>*Incorrect Login details</p>}
           <Link href="/">Forgot password?</Link>
-          <button type="submit">Login</button>
+          <button type="submit">{loading ? 'Logging in' : 'Login'}</button>
         </form>
         <p className="sign-up">
           Don't have an account, <Link href="/">Signup</Link>
